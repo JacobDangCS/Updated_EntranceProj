@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Merriweather+Sans:ital@1&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@1,300&display=swap');
+/*Fonts above taken from Google Fonts, different fonts used for distinction purposes*/
+
+/*Includes the padding and border in the questionaire's total width and height.*/
+*{
+  box-sizing: border-box;
+}
+
+
+/*Creates the style foundation for quiz*/
+body{
+  background-color: #93659f;
+  background-image:  linear-gradient(325deg, #b8c6db, 0%, #f5f7f7, 100%); 
+  font-family: 'Merriweather Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  margin: auto;
+}
+
+/*Styles the inner box*/
+.test-container{
+    background-color: rgba(255, 255, 255, 0.854);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: auto;
+}
+
+/*Stylizes Movie Title*/
+.title-container {
+  text-align: center;
+  margin: auto;
+  font-family: 'Limelight', cursive;
+  font-size: 1.5em;
+}
+
+/*Stylizes welcome statement*/
+.intro1-container {
+    font-family: 'Limelight', cursive;
+    font-size: 1.5em;
+}
+
+/*Stylizes my name statement*/
+.intro2-container {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*Stylizes the directions statement*/
+.intro3-container {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*Centers the movie poster*/
+.picture-container {
+  display: block;
+  margin: auto;
+}
+
+/*Centers the description for movie recommendation*/
+.para-container{
+    max-width: 500px;
+    margin: auto;
+    overflow-wrap: break-word;
+    font-family: 'Petrona', serif;
+}
+
+/*Centers the BOLD titles*/
+h2{
+    padding:1rem;
+    text-align:center;
+    margin:0;
+}
+
+/*Stylizes the submission button*/
+button{
+    background-color:#2bb234a2;
+    color:#fff;
+    border-color:black;
+    border-radius: 24px;
+    display: block;
+    width: 100%;
+    cursor:pointer;
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 1 .5rem;
+}
+
+/*Changes color of submission button when cursor is over it*/
+button:hover{
+    background-color: #29dd199a;
+}
+
+/*Changes the color of the submission button after clicked*/
+button:focus{
+    outline: none;
+    background-color: #0fd8b4c3; 
+}
