@@ -152,7 +152,7 @@ function openTitle() {
 Should retrieve saved film data*/
 function interestedPage() {
   userSaved = JSON.parse(localStorage.getItem("interested"))
-  if (userSaved.length == 0 || userSaved == null) {
+  if (userSaved == null || userSaved.length == 0) {
     document.querySelector('#intBtn')
       .textContent = 'N/A';
   } else {
