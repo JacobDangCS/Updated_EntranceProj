@@ -22,7 +22,7 @@ body{
 }
 
 /*Styles the inner box*/
-.test-container{
+.quiz-container{
     background-color: rgba(255, 255, 255, 0.854);
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
@@ -31,7 +31,7 @@ body{
 }
 
 /*Stylizes Movie Title*/
-.title-container {
+.movieTitle-container {
   text-align: center;
   margin: auto;
   font-family: 'Limelight', cursive;
@@ -39,18 +39,18 @@ body{
 }
 
 /*Stylizes welcome statement*/
-.intro1-container {
+.welcome-container {
     font-family: 'Limelight', cursive;
     font-size: 1.5em;
 }
 
 /*Stylizes my name statement*/
-.intro2-container {
+.myname-container {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
 /*Stylizes the directions statement*/
-.intro3-container {
+.description-container {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
