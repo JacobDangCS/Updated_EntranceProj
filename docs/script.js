@@ -190,6 +190,9 @@ function saveMovie() {
       .textContent = 'Already Saved!';
   } else {
     userSaved = JSON.parse(localStorage.getItem("interested"))
+    if (userSaved == null){
+      userSaved = []
+    }
     selectedMovie.title
     document.querySelector('#saveBtn')
       .textContent = 'Saved!';
