@@ -7,12 +7,6 @@ let pos = 0, welcome, test, question01, choice01, choices01,
 //Makes empty array
 let movies = [];
 
-//Makes array and checks local storage
-/* let userSaved = []
-if (JSON.parse(localStorage.getItem("interested")) != null) {
-  userSaved = JSON.parse(localStorage.getItem("interested"));
-} */
-
 //Array of all movie data
 let data = [{
   "Title": "<h2> <p class='movieTitle-container'> Spiderman: Into the Spider-verse </p> </h2>",
@@ -178,9 +172,9 @@ function clearScreen() {
 as well as have result(s) stored into the local storage/Interested Page*/
 function saveMovie() {
   userSaved = JSON.parse(localStorage.getItem("interested"))
-    if (userSaved == null){
-      userSaved = []
-    }
+  if (userSaved == null){
+    userSaved = []
+  }
 
   let alrSave = false
   for (let i = 0; i < userSaved.length; i++) {
