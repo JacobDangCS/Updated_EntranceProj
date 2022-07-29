@@ -8,10 +8,10 @@ let pos = 0, welcome, test, question01, choice01, choices01,
 let movies = [];
 
 //Makes array and checks local storage
-let userSaved = []
+/* let userSaved = []
 if (JSON.parse(localStorage.getItem("interested")) != null) {
   userSaved = JSON.parse(localStorage.getItem("interested"));
-}
+} */
 
 //Array of all movie data
 let data = [{
@@ -98,7 +98,6 @@ function Movie(title, type, genre, desc, image) {
   this.genre = genre;
   this.desc = desc;
   this.image = image;
-  return this;
 }
 
 for (let i = 0; i < data.length; i++) {
@@ -178,6 +177,11 @@ function clearScreen() {
 /*Save Button Function, should change text 'Interested' to 'Saved!' for user 
 as well as have result(s) stored into the local storage/Interested Page*/
 function saveMovie() {
+  userSaved = JSON.parse(localStorage.getItem("interested"))
+    if (userSaved == null){
+      userSaved = []
+    }
+
   let alrSave = false
   for (let i = 0; i < userSaved.length; i++) {
     let curTitle = userSaved[i].title
@@ -189,10 +193,6 @@ function saveMovie() {
     document.querySelector('#saveBtn')
       .textContent = 'Already Saved!';
   } else {
-    userSaved = JSON.parse(localStorage.getItem("interested"))
-    if (userSaved == null){
-      userSaved = []
-    }
     selectedMovie.title
     document.querySelector('#saveBtn')
       .textContent = 'Saved!';
